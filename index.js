@@ -85,17 +85,19 @@ app.get('/buscar', function (req, res) {
     },
     raw: true
   })
-
   .then(function (visitas) {
     res.render('consultarVisita', {
+      titulo: 'Consultar Visitas',
       visitas: visitas,
-      query: termo
+      query: termo,
+      styles: '<link rel="stylesheet" href="/css/consultarVisita.css">'
     });
   })
   .catch(function (erro) {
     res.status(500).send('Erro na busca: ' + erro);
   });
 });
+
 
 // Rota antiga de listagem (ainda mantida se quiser usar)
 app.get('/lista', function (req, res) {

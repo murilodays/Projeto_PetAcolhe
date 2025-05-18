@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/editar.css">
+</head>
+<body>
+  <div class="hero">
+  <h2>Atualize aqui as informações da sua visita</h2>
+</div>
+
+<form action="/atualizar/{{visita.id}}" method="POST" class="form-visita">
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome" value="{{visita.nome}}" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" value="{{visita.email}}" required>
+
+  <label for="numeroCelular">Número de Celular:</label>
+  <input type="text" id="numeroCelular" name="numeroCelular" value="{{visita.numeroCelular}}">
+
+  <label for="cpf">CPF:</label>
+  <input type="text" id="cpf" name="cpf" value="{{visita.cpf}}">
+
+  <label for="animal">Animal de interesse:</label>
+  <input type="text" id="animal" name="animal" value="{{visita.animal}}">
+
+  <label for="dataVisita">Data da Visita:</label>
+  <input type="date" id="dataVisita" name="dataVisita" value="{{visita.dataVisita}}">
+
+  <label for="horaVisita">Hora da Visita:</label>
+  <input type="time" id="horaVisita" name="horaVisita" value="{{visita.horaVisita}}">
+
+  <button type="submit">Salvar Atualização</button>
+</form>
+</body>
+</html>

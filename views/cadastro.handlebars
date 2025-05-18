@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/cadastro.css">
+</head>
+
+<body>
+
+  <header class="hero">
+  <h2>Cadastre-se aqui para fazer sua visita</h2>
+  </header>
+
+
+<form class="form-visita" action="/add" method="POST">
+  <label for="nome">Nome:</label>
+  <input type="text" name="nome" id="nome" required>
+
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email" required>
+
+  <label for="numeroCelular">Número de Celular:</label>
+  <input type="text" name="numeroCelular" id="numeroCelular" required>
+
+  <label for="cpf">CPF:</label>
+  <input type="text" name="cpf" id="cpf" required>
+
+  <label for="animal">Animal de interesse:</label>
+  <input type="text" name="animal" id="animal" required>
+
+  <label for="dataVisita">Data da Visita:</label>
+  <input type="date" name="dataVisita" id="dataVisita" required>
+
+  <label for="horaVisita">Hora da Visita:</label>
+  <input type="time" name="horaVisita" id="horaVisita" required>
+
+  <button type="submit">Cadastrar Visita</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+.btn-warning {
+    background-color: #ff9800;
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #e68900;
+}
+
+/* Banner Principal */
+.banner {
+    background: linear-gradient(to right, #76c7c0, #4caf50);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Seção Sobre */
+.sobre {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: justify;
+}
+
+.sobre h2 {
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+/* Seção Adoção */
+.animais {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.animais h2 {
+    margin-bottom: 30px;
+    color: #2e7d32;
+}
+
+.pets-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.pet {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 280px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.pet:hover {
+    transform: translateY(-5px);
+}
+
+.pet img {
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.pet h3 {
+    margin: 10px 0 5px;
+}
+
+.pet p {
+    margin-bottom: 10px;
+}
+
+.adopt-btn {
+    width: 100%;
+}
+
+/* Seção Depoimentos */
+.depoimentos {
+    background-color: #f1f8e9;
+    padding: 40px 20px;
+}
+
+.depoimentos h2 {
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+.depoimentos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.depoimento {
+    background-color: #fff;
+    padding: 20px;
+    border-left: 5px solid #4caf50;
+    font-style: italic;
+}
+
+.depoimento h4 {
+    margin-top: 10px;
+    color: #2e7d32;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+}
+
+footer .social a {
+    color: #76c7c0;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .pets-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.navbar {
+  background: linear-gradient(to right, #76c7c0, #4caf50);
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #dfffe2;
+  text-decoration: underline;
+}

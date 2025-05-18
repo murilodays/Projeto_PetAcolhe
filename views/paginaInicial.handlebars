@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{titulo}}</title>
+    <link rel="stylesheet" href="/css/paginaInicial.css">
+</head>
+
+<body>
+
+    <header class="banner">
+        <div class="container">
+            <h1>PetAcolhe ❤</h1>
+            <p>Ganhe um melhor amigo. Conheça e transforme uma vida!</p>
+            <a href="/sobre" class="btn btn-primary">Quero saber mais.</a>
+            <a href="/cadastro" class="btn btn-primary">Quero fazer uma visita.</a>
+        </div>
+    </header>
+
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Um pouco sobre nós...</h2>
+            <p>No PetAcolhe, acreditamos que todo animal merece um lar onde seja amado e respeitado. Somos uma ONG apaixonada por causas animais, comprometida com a adoção responsável, o combate ao abandono e a construção de uma sociedade mais empática. Nossa missão vai além de encontrar lares para cães e gatos resgatados — queremos criar laços duradouros, aproximando pessoas dispostas a acolher e transformar vidas. Cada pet aqui tem uma história, e talvez esteja apenas esperando pela sua para ter um novo começo. Oferecemos uma plataforma segura, acessível e feita com muito carinho, para que o processo de adoção seja simples, transparente e cheio de significado. Ao adotar, você não apenas salva uma vida — você ganha um companheiro fiel, afetuoso e cheio de gratidão.</p><br>
+            
+            <p>Junte-se ao nosso movimento. Adote amor, acolha esperança.<br>
+            <strong>PetAcolhe — onde novas histórias começam.</strong></p>
+        </div>
+    </section>
+
+
+    <section id="adocao" class="animais">
+        <div class="container">
+            <h2>🐾 Alguns dos nossos Pets para Adoção</h2>
+            <div id="pets-container" class="pets-container"></div>
+
+            <div class="pets-row">
+                <div class="pet">
+                    <img src="/img/dog1.jpg" alt="Rex para adoção">
+                    <h3>Rex</h3>
+                    <p>3 anos, dócil e brincalhão.</p>
+                    <a href="/animais" class="btn btn-primary adopt-btn">Quero Adotar</a>
+                </div>
+
+                <div class="pet">
+                    <img src="/img/gato1.jpg" alt="Mia para adoção">
+                    <h3>Mia</h3>
+                    <p>2 anos, amorosa e carinhosa.</p>
+                    <a href="/animais" class="btn btn-primary adopt-btn">Quero Adotar</a>
+                </div>
+
+                <div class="pet">
+                    <img src="/img/dog2.jpg" alt="Thor para adoção">
+                    <h3>Thor</h3>
+                    <p>4 anos, energético e leal.</p>
+                    <a href="/animais" class="btn btn-primary adopt-btn">Quero Adotar</a>
+                </div>
+            </div>
+
+            <script id="pets-template" type="text/x-handlebars-template">
+                {{#each pets}}
+                    <div class="pet">
+                        <img src="/img/{{imagem}}" alt="{{nome}} para adoção">
+                        <h3>{{nome}}</h3>
+                        <p>{{idade}}, {{descricao}}</p>
+                        <a href="/cadastro" class="btn btn-primary adopt-btn">Quero Adotar</a>
+                    </div>
+                {{/each}}
+            </script>
+        </div>
+    </section>
+
+
+    <section class="depoimentos">
+        <div class="container">
+            <h2>📢 Depoimentos de Adotantes</h2>
+            <div class="depoimentos-container">
+                <div class="depoimento">
+                    <p>"Adotei a Lulu e ela mudou minha vida. Cheia de amor e energia!"</p>
+                    <h4>- Ana Clara</h4>
+                </div>
+                <div class="depoimento">
+                    <p>"O processo foi rápido e muito bem orientado. Recomendo demais!"</p>
+                    <h4>- Carlos Eduardo</h4>
+                </div>
+                <div class="depoimento">
+                    <p>"Hoje acordo todos os dias com um amigo fiel ao meu lado. Sou extremamente grata por isso."</p>
+                    <h4>- Mariana Alves</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars @4.7.7/dist/handlebars.min.js"></script>
+    <script src="/js/pagina.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs
+*.log
+
+# Diretórios temporários e arquivos de sistema
+.DS_Store
+Thumbs.db
+.env
+
+# Cache do sistema
+.cache/
+dist/
+tmp/
+*.tmp
+
+# Arquivos do sistema operacional
+.vscode/
+.idea/
+
+# Arquivos de build
+/public/css/*.map
+
+# Arquivos do editor
+*.sublime-workspace
+*.sublime-project
+
+# Outros
+package-lock.json

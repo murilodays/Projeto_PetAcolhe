@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/consultarVisita.css">
+</head>
+<body>
+<header class="hero">
+  <h1 class="titulo-consulta">Cadastro das visitas</h1>
+  <form class="form-busca" action="/buscar" method="GET">
+    <input type="text" name="q" placeholder="Buscar por nome ou CPF" value="{{query}}">
+    <button type="submit">Buscar</button>
+  </form>
+</header>
+
+<hr class="divisor">
+
+{{#if visitas.length}}
+<div class="container-visitas">
+  {{#each visitas}}
+    <div class="visita-card">
+      <h2>{{nome}}</h2>
+      <p><strong>Email:</strong> {{email}}</p>
+      <p><strong>Celular:</strong> {{numeroCelular}}</p>
+      <p><strong>CPF:</strong> {{cpf}}</p>
+      <p><strong>Animal:</strong> {{animal}}</p>
+      <p><strong>Data:</strong> {{dataVisita}}</p>
+      <p><strong>Hora:</strong> {{horaVisita}}</p>
+
+      <div class="botoes-visita">
+        <a href="/editar/{{id}}">
+          <button class="btn-atualizar">Editar</button>
+        </a>
+        <a href="/deletar/{{id}}">
+          <button class="btn-deletar">Deletar</button>
+        </a>
+      </div>
+    </div>
+  {{/each}}
+</div>
+{{else}}
+  <p class="nenhum-resultado"><strong>Nenhum resultado encontrado.</strong></p>
+{{/if}}
+
+</body>
+</html>

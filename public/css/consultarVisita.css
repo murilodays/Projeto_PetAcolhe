@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fefefe;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.hero {
+  background: linear-gradient(to right, #76c7c0, #4caf50);
+  color: white;
+  text-align: center;
+  padding: 40px 20px 30px;
+}
+
+.hero h1 {
+  color: white;
+}
+
+.titulo-consulta {
+  margin-top: 40px;
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.form-busca {
+  margin: 20px auto;
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.form-busca input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.form-busca button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.form-busca button:hover {
+  background-color: #45a049;
+}
+
+.divisor {
+  width: 90%;
+  margin: 20px auto;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* VISITAS */
+.container-visitas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.visita-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 30%;
+  flex-shrink: 0;
+}
+
+.visita-card h2 {
+  color: #222;
+  margin-top: 0;
+}
+
+.visita-card p {
+  margin: 6px 0;
+  color: #444;
+}
+
+.botoes-visita {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.botoes-visita button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-atualizar {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-atualizar:hover {
+  background-color: #005dc1;
+}
+
+.btn-deletar {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-deletar:hover {
+  background-color: #b02a37;
+}
+
+.nenhum-resultado {
+  color: #888;
+  font-style: italic;
+  margin: 20px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+}
+
+footer .social a {
+  color: #76c7c0;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.navbar {
+  background: linear-gradient(to right, #76c7c0, #4caf50);
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #dfffe2;
+  text-decoration: underline;
+}

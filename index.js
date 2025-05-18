@@ -25,29 +25,45 @@ app.use(bodyParser.json());
 
 // Página inicial
 app.get('/', function(req, res) {
-  res.render('paginainicial');
+  res.render('paginainicial', {
+    titulo: 'Início',
+    styles: '<link rel="stylesheet" href="/css/paginainicial.css">'
+  });
 });
 
 // Página de cadastro
 app.get('/cadastro', function(req, res) {
-  res.render('cadastro');
+  res.render('cadastro', {
+    titulo: 'Cadastro',
+    styles: '<link rel="stylesheet" href="/css/cadastro.css">'
+  });
 });
 
 // Página sobre
 app.get('/sobre', function(req, res) {
-  res.render('sobre');
+  res.render('sobre', {
+    titulo: 'Sobre',
+    styles: '<link rel="stylesheet" href="/css/sobre.css">'
+  });
 });
 
 // Página de animais
 app.get('/animais', function(req, res) {
-  res.render('animais');
+  res.render('animais', {
+    titulo: 'Animais',
+    styles: '<link rel="stylesheet" href="/css/animais.css">'
+  });
 });
 
 // Página de "Acessar Formulários" - lista todas as visitas
 app.get('/visitas', function (req, res) {
   Visita.findAll({ raw: true })
     .then(function (visitas) {
-      res.render('consultarVisita', { visitas: visitas });
+      res.render('consultarVisita', {
+        titulo: 'Consultas',
+        visitas: visitas,
+        styles: '<link rel="stylesheet" href="/css/consultarVisita.css">'
+      });
     })
     .catch(function (erro) {
       res.status(500).send('Erro ao carregar visitas: ' + erro);
@@ -126,7 +142,11 @@ app.get('/editar/:id', function (req, res) {
   Visita.findByPk(req.params.id)
     .then(function (visita) {
       if (visita) {
-        res.render('editar', { visita: visita });
+        res.render('editar', {
+          titulo: 'Editar Visita',
+          visita: visita,
+          styles: '<link rel="stylesheet" href="/css/editar.css">'
+        });
       } else {
         res.status(404).send('Visita não encontrada.');
       }

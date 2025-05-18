@@ -95,6 +95,6 @@ Formulário de edição pré-preenchido com os dados da visita.
 
 - **Email**: contatomurilodays@gmail.com  
 - **LinkedIn**: [murilodays](https://www.linkedin.com/in/murilodays/)  
-- **WhatsApp**: [Clique para conversar](https://wa.me/message/ONXRU2RSDSNEE1)
+- **WhatsApp**: [+55 81 9 9608-5335](https://wa.me/message/ONXRU2RSDSNEE1)
 
 ---

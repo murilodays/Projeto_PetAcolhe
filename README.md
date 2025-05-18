@@ -1,4 +1,3 @@
-
 # 🐶 PetAcolhe
 
 Bem-vindo ao repositório do **PetAcolhe**!  
@@ -7,6 +6,14 @@ Este é um projeto acadêmico em grupo desenvolvido para a disciplina de **Back-
 O **PetAcolhe** é um sistema completo de adoção de animais, com páginas interativas, banco de dados e funcionalidades completas de agendamento e gerenciamento de visitas.
 
 ---
+
+## 👥 Integrantes do grupo
+
+- Murilo Dias (eu)
+- Julia Evelyn de Oliveira
+- Artur Gabriel Paes Barbosa
+- Lucas Renan Araujo Santos
+- Rodrigo Wollenberg de Souza Ramos
 
 ## 🚀 Tecnologias Utilizadas
 

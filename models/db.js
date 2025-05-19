@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-  const sequelize = new Sequelize('db_projeto_back', 'root', '178181', {
+  const sequelize = new Sequelize('nome_do_seu_banco', 'root', 'sua_senha', {
    host: '127.0.0.1',
    dialect: 'mysql'
   }) 

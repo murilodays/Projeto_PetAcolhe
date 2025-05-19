@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const { engine } = require('express-handlebars');
 const bodyParser = require('body-parser');
-const Visita = require('./models/Visita');
+const Visita = require('./models/visita');
 const { Op } = require('sequelize'); // IMPORTAÇÃO NECESSÁRIA PARA BUSCA
 const path = require('path'); 
 
